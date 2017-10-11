@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+h1 {
+	font-family: Raleway;
+	font-size: 2em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 3em;
+}
+h3 {
+	font-family: Raleway;
+	font-size: 1.5em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 1em;
+}
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/city.jpg');
+  background-attachment: fixed ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+.brand {
+  background: rgba(255,255,255,0.6);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
