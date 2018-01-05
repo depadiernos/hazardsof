@@ -1,1 +1,0 @@
-// Dummy cart.js file to silence 404 due to Olark/Shopify integration bug.
