@@ -9,15 +9,15 @@
 [build]
   base    = ""
   publish = "dist"
-  command = "npm run build"
+  command = "echo 'building'"
 
 # Production context: All deploys to the main
 # repository branch will inherit these settings.
 [context.production]
-  command = "npm run build"
+  publish = "src"
+  command = "echo 'building'"
   [context.production.environment]
     ACCESS_TOKEN = "super secret"
-    NODE_ENV = "production"
 
 # Deploy Preview context: All Deploy Previews
 # will inherit these settings.
