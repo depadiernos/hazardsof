@@ -8,8 +8,8 @@
 
 [build]
   base    = ""
-  publish = "./src"
-  command = "echo building"
+  publish = "src"
+  command = "echo 'building'"
   #functions = "functions"
 
 
@@ -17,7 +17,7 @@
 # repository branch will inherit these settings.
 [context.production]
   publish = "./src"
-  command = "echo production"
+  command = "echo 'production'"
   [context.production.environment]
     ACCESS_TOKEN = "super secret"
 
@@ -29,7 +29,7 @@
 # Branch Deploy context: All deploys that are not in
 # an active Deploy Preview will inherit these settings.
 [context.branch-deploy]
-  command = "echo branch-deploy"
+  command = "echo 'branch-deploy'"
  
   [context.branch-deploy.environment]
     NODE_ENV = "developement"
@@ -45,11 +45,11 @@
   command = "echo features"
 
 
-# # COMMENT: These are two basic redirect rules
-# # COMMENT: This is an abbreviated syntax for rules that fit in one line
-# redirects = [
-#   {from = "/blog", to = "/myblog"},
-#   {from = "/*", to = "/index.html", status = 200}]
+# COMMENT: These are two basic redirect rules
+# COMMENT: This is an abbreviated syntax for rules that fit in one line
+redirects = [
+  {from = "/blog", to = "/index.html"},
+  {from = "/*", to = "/index.html", status = 200}]
 
 # # COMMENT: These are two rules with all the fields expanded
 # # COMMENT: This is an expanded syntax for rules that won't fit in one line
