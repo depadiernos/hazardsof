@@ -75,9 +75,9 @@ redirects = [
 
     # COMMENT: Multi-key header rules are expressed with multi-line strings
     Link = '''
-    </base.css>; rel=preload; as=stylesheet, \
-    </base.css>; rel=preload; as=stylesheet, \
-    </base.css>; rel=preload; as=stylesheet'''
+    </assets/css/base.css>; rel=preload; as=stylesheet, \
+    </assets/css/base.css>; rel=preload; as=stylesheet, \
+    </assets/css/base.css>; rel=preload; as=stylesheet'''
 
 
   
