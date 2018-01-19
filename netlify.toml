@@ -9,7 +9,7 @@
 [build]
   base    = ""
   publish = "src"
-  command = "echo 'building'"
+  command = ""
   #functions = "functions"
 
 
