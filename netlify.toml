@@ -16,7 +16,7 @@
 # repository branch will inherit these settings.
 [context.production]
   publish = "./src"
-  command = "echo production && exit 0"
+  command = ""
   [context.production.environment]
     ACCESS_TOKEN = "super secret"
 
@@ -67,17 +67,17 @@ redirects = [
   force = true # COMMENT: ensure that we always redirect
 
   
-# [[headers]]
-#   for = "/*"
-#   [headers.values]
-#     X-Frame-Options = "DENY"
-#     X-XSS-Protection = "1; mode=block"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
 
-#     # COMMENT: Multi-key header rules are expressed with multi-line strings
-#     Link = '''
-#     </style1.css>; rel=preload; as=stylesheet, \
-#     </style2.css>; rel=preload; as=stylesheet, \
-#     </style3.css>; rel=preload; as=stylesheet'''
+    # COMMENT: Multi-key header rules are expressed with multi-line strings
+    Link = '''
+    </style1.css>; rel=preload; as=stylesheet, \
+    </style2.css>; rel=preload; as=stylesheet, \
+    </style3.css>; rel=preload; as=stylesheet'''
 
 
   
