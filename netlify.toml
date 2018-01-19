@@ -8,8 +8,7 @@
 
 [build]
   base    = ""
-  publish = "src"
-  command = ""
+  publish = "./src"
   #functions = "functions"
 
 
