@@ -9,7 +9,7 @@
 [build]
   base    = ""
   publish = "src"
-  #functions = "functions"
+  functions = "functions"
 
 
 # Production context: All deploys to the main
@@ -76,8 +76,8 @@ redirects = [
     # COMMENT: Multi-key header rules are expressed with multi-line strings
     Link = '''
     </assets/css/base.css>; rel=preload; as=style, \
-    </assets/css/base.css>; rel=preload; as=style, \
-    </assets/css/base.css>; rel=preload; as=style'''
+    </assets/css/base2.css>; rel=preload; as=style, \
+    </assets/css/base3.css>; rel=preload; as=style'''
 
 
   
