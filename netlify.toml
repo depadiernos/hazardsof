@@ -10,7 +10,7 @@
   base    = ""
   publish = "src"
   command = "echo 'building'"
-  functions = "functions"
+  #functions = "functions"
 
 
 # Production context: All deploys to the main
