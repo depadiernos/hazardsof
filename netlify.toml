@@ -16,7 +16,7 @@
 # repository branch will inherit these settings.
 [context.production]
   publish = "./src"
-  command = "cd ."
+  command = "echo production && cd ."
   [context.production.environment]
     ACCESS_TOKEN = "super secret"
 
