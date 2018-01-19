@@ -16,7 +16,7 @@
 # repository branch will inherit these settings.
 [context.production]
   publish = "./src"
-  command = "echo production && cd ."
+  command = "echo production && exit 0"
   [context.production.environment]
     ACCESS_TOKEN = "super secret"
 
@@ -28,7 +28,7 @@
 # Branch Deploy context: All deploys that are not in
 # an active Deploy Preview will inherit these settings.
 [context.branch-deploy]
-  command = "echo 'branch-deploy'"
+  command = ""
  
   [context.branch-deploy.environment]
     NODE_ENV = "developement"
@@ -37,7 +37,7 @@
 # will take these settings and override their
 # current ones.
 [context.staging]
-  command = "echo staging"
+  command = "echo"
   base = "staging"
 
 [context."features/branch"]
@@ -57,8 +57,8 @@ redirects = [
   to = "/new-path"
   status = 301
   force = false
-  query = {path = ":path"} # COMMENT: apply this rule for /old-path?path=example
-  conditions = {Language = "en", Country = "US"}
+  query = {path = [":path"]} # COMMENT: apply this rule for /old-path?path=example
+  conditions = {[Language = "en", Country = "US"]}
 
 # [[redirects]]
 #   from = "/*"
