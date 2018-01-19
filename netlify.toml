@@ -60,11 +60,11 @@ redirects = [
   query = {path = ":path"} # COMMENT: apply this rule for /old-path?path=example
   conditions = {Language = ["en"], Country = ["US"]}
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = true # COMMENT: ensure that we always redirect
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
+#   force = true # COMMENT: ensure that we always redirect
 
   
 [[headers]]
