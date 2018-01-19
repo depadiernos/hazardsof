@@ -8,8 +8,10 @@
 
 [build]
   base    = ""
-  publish = "dist"
+  publish = "src"
   command = "echo 'building'"
+  functions = "functions"
+
 
 # Production context: All deploys to the main
 # repository branch will inherit these settings.
@@ -78,8 +80,5 @@ redirects = [
     </style2.css>; rel=preload; as=stylesheet, \
     </style3.css>; rel=preload; as=stylesheet'''
 
-
-[build]
-  functions = "<path/to/your/folder>"
 
   
