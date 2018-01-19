@@ -74,10 +74,10 @@ redirects = [
     X-XSS-Protection = "1; mode=block"
 
     # COMMENT: Multi-key header rules are expressed with multi-line strings
-    # Link = '''
-    # </assets/css/base.css>; rel=preload; as=stylesheet, \
-    # </assets/css/base.css>; rel=preload; as=stylesheet, \
-    # </assets/css/base.css>; rel=preload; as=stylesheet'''
+    Link = '''
+    </assets/css/base.css>; rel=preload; as=stylesheet, \
+    </assets/css/base.css>; rel=preload; as=stylesheet, \
+    </assets/css/base.css>; rel=preload; as=stylesheet'''
 
 
   
