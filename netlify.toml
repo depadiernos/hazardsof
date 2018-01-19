@@ -8,7 +8,7 @@
 
 [build]
   base    = ""
-  publish = "src"
+  publish = "./src"
   command = "echo building"
   #functions = "functions"
 
@@ -16,7 +16,7 @@
 # Production context: All deploys to the main
 # repository branch will inherit these settings.
 [context.production]
-  publish = "src"
+  publish = "./src"
   command = "echo production"
   [context.production.environment]
     ACCESS_TOKEN = "super secret"
@@ -42,7 +42,7 @@
   base = "staging"
 
 [context."features/branch"]
-  command = "gulp"
+  command = "echo features"
 
 
 # # COMMENT: These are two basic redirect rules
