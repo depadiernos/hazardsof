@@ -8,14 +8,14 @@
 
 [build]
   base    = ""
-  publish = "./src"
+  publish = "src"
   #functions = "functions"
 
 
 # Production context: All deploys to the main
 # repository branch will inherit these settings.
 [context.production]
-  publish = "./src"
+  publish = "src"
   command = ""
   [context.production.environment]
     ACCESS_TOKEN = "super secret"
