@@ -40,7 +40,7 @@
   command = "echo"
   base = "staging"
 
-[context."features/branch"]
+[context."features/*"]
   command = "echo features"
 
 
@@ -78,6 +78,8 @@ redirects = [
     </assets/css/base.css>; rel=preload; as=style, \
     </assets/css/base2.css>; rel=preload; as=style, \
     </assets/css/base3.css>; rel=preload; as=style'''
+
+    # Basic-Auth = "someuser:somepassword anotheruser:anotherpassword"
 
 
   
