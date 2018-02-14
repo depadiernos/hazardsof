@@ -9,7 +9,7 @@
 [build]
   # base    = ""
   publish = ""
-  command = "echo 'building'"
+  command = ""
   functions = "functions"
 
 # Production context: All deploys to the main
@@ -38,7 +38,7 @@
 # current ones.
 [context.staging]
   command = ""
-  base = "staging"
+  base = ""
 
 [context."features/branch"]
   command = ""
