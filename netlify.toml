@@ -7,8 +7,8 @@
 #    that is where we will look for package.json/.nvmrc/etc not repo root!
 
 [build]
-  base    = ""
-  publish = "dist"
+  # base    = ""
+  publish = ""
   command = "echo 'building'"
   functions = "functions"
 
