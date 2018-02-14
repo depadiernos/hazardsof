@@ -1,4 +1,4 @@
-[context.build]
+[build]
   publish = "src"
 
 [[headers]]
@@ -13,6 +13,5 @@
 
 # Basic redirect rules
 redirects = [
-  {from = "/platform/integration", to = "/discover/ehr-integrations"},
-  {from = "/foo", to = "/discover/ehr-integrations"},
-  {from = "/*", to = "/404/index.html", status = 404}]
+  {from = "/foo", to = "/index.html"},
+  {from = "/*", to = "/index.html", status = 404}]
