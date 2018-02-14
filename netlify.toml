@@ -1,4 +1,18 @@
 
+ 
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    x-api-key = "XAPIKEY"
+
+    # COMMENT: Multi-key header rules are expressed with multi-line strings
+    Link = '''
+    </style1.css>; rel=preload; as=stylesheet, \
+    </style2.css>; rel=preload; as=stylesheet, \
+    </style3.css>; rel=preload; as=stylesheet'''
+
 # Global settings applied to the whole site.  
 # 
 # “publish” is the directory to publish (relative to root of your repo),
@@ -66,16 +80,4 @@
 #   status = 200
 #   force = true # COMMENT: ensure that we always redirect
 
-  
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    x-api-key = "XAPIKEY"
-
-    # COMMENT: Multi-key header rules are expressed with multi-line strings
-    Link = '''
-    </style1.css>; rel=preload; as=stylesheet, \
-    </style2.css>; rel=preload; as=stylesheet, \
-    </style3.css>; rel=preload; as=stylesheet'''
+ 
