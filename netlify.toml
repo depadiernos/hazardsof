@@ -13,6 +13,6 @@
 
 # Basic redirect rules
 redirects = [
-  {from = "/foo", to = "/index.html", status = 200},
+  {from = "/foo", to = "/blog/index.html", status = 200},
   {from = "/*", to = "/index.html", status = 301}
   ]
