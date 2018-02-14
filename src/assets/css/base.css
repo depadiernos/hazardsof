@@ -22,7 +22,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/city.jpg');
+  /* background-image: url('../img/city.jpg'); */
   background-attachment: fixed ;
   background-repeat: no-repeat;
   background-size: cover;
