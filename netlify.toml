@@ -21,8 +21,8 @@
 #    that is where we will look for package.json/.nvmrc/etc not repo root!
 
 [build]
-  # base    = ""
-  publish = ""
+  base    = ""
+  publish = "src"
   command = ""
   functions = "functions"
 
