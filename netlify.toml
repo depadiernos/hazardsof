@@ -37,11 +37,11 @@
 # will take these settings and override their
 # current ones.
 [context.staging]
-  command = "echo 'staging'"
+  command = ""
   base = "staging"
 
 [context."features/branch"]
-  command = "gulp"
+  command = ""
 
 
 # COMMENT: These are two basic redirect rules
@@ -58,7 +58,7 @@
 #   status = 301
 #   force = false
 #   query = {path = ":path"} # COMMENT: apply this rule for /old-path?path=example
-#   conditions = {Language = "en", Country = "US"}
+#   conditions = {Language = ["en"], Country = ["US"]}
 
 [[redirects]]
   from = "/*"
@@ -78,6 +78,3 @@
     </style1.css>; rel=preload; as=stylesheet, \
     </style2.css>; rel=preload; as=stylesheet, \
     </style3.css>; rel=preload; as=stylesheet'''
-
-  
-  
