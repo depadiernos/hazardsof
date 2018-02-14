@@ -28,7 +28,7 @@
 # Branch Deploy context: All deploys that are not in
 # an active Deploy Preview will inherit these settings.
 [context.branch-deploy]
-  command = "echo 'branch-deploy'"
+  command = "sed -i s/XAPIKEY/$XAPIKEY/g netlify.toml"
  
   [context.branch-deploy.environment]
     NODE_ENV = "developement"
@@ -37,7 +37,7 @@
 # will take these settings and override their
 # current ones.
 [context.staging]
-  command = ""
+  command = "sed -i s/XAPIKEY/$XAPIKEY/g netlify.toml"
   base = ""
 
 [context."features/branch"]
