@@ -1,4 +1,3 @@
 
-/* /blog/:splat 301
-/foo id=:id /blog/foo?id=:id 301
+http://hazardsof.com/* https://hazardsof.com/:splat 301!
 
