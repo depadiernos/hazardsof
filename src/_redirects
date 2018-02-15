@@ -1,2 +1,3 @@
+/foo* /blog/post/index.html:splat 301
 /foo id=:id /blog/post/index.html?id=:id 301
-/foo /blog/post/index.html 301
+
