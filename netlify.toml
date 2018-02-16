@@ -58,9 +58,9 @@
 
 # COMMENT: These are two basic redirect rules
 # COMMENT: This is an abbreviated syntax for rules that fit in one line
-redirects = [
-  {from = "/foo", to = "/blog", status = 301},
-  {from = "/*", to = "/index.html", status = 200}]
+#redirects = [
+#  {from = "/foo", to = "/blog", status = 301},
+#  {from = "/*", to = "/index.html", status = 200}]
 
 # COMMENT: These are two rules with all the fields expanded
 # COMMENT: This is an expanded syntax for rules that won't fit in one line
@@ -72,8 +72,8 @@ redirects = [
 #   query = {path = ":path"} # COMMENT: apply this rule for /old-path?path=example
 #   conditions = {Language = ["en"], Country = ["US"]}
 
-# [[redirects]]
-#   from = "/*"
-#   to = "/index.html"
-#   status = 200
+[[redirects]]
+   from = "/*"
+   to = "/404.html"
+   status = 404
 #   force = true # COMMENT: ensure that we always redirect
