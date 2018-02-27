@@ -13,6 +13,20 @@
 				<h3>This is the website of a nerd, musician, and tinkerer. <br> And it is all about the hazards of Tech, Music, Reading and other stuff.</h3>
 			</div>
     </div>
-    <script src=""></script>
+	<form name="contact" method="POST" netlify>
+	  <p>
+	    <label>Your Name: <input type="text" name="name"></label>   
+	  </p>
+	  <p>
+	    <label>Your Email: <input type="email" name="email"></label>
+	  </p>
+	  <p>
+	    <label>Message: <textarea name="message"></textarea></label>
+	  </p>
+	  <div netlify-recaptcha></div>
+	  <p>
+	    <button type="submit">Send</button>
+	  </p>
+	</form>
   </body>
 </html>
