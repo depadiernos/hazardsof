@@ -23,6 +23,29 @@
 	  <p>
 	    <label>Message: <textarea name="message"></textarea></label>
 	  </p>
+	<div class="form-group">
+		<label for="services">What services do you need for your project?</label>
+		<div class="btn-group-toggle" data-toggle="button">
+			<label class="btn btn-outline-primary" for="ux">
+				<input type="checkbox" name="services[]" value="UX" autocomplete="off">UX Research
+			</label>
+			<label class="btn btn-outline-primary" for="ui">
+				<input type="checkbox" name="services[]" value="UI" autocomplete="off">UI Design
+			</label>
+			<label class="btn btn-outline-primary" for="front-end">
+				<input type="checkbox" name="services[]" value="Front end development" autocomplete="off">Front-end developement
+			</label>
+			<label class="btn btn-outline-primary" for="wordpress">
+				<input type="checkbox" name="services[]" value="Wordpress" autocomplete="off">Wordpress
+			</label>
+			<label class="btn btn-outline-primary" for="ecommerce">
+				<input type="checkbox" name="services[]" value="eCommerce" autocomplete="off">eCommerce
+			</label>
+			<label class="btn btn-outline-primary" for="email">
+				<input type="checkbox" name="services[]" value="Email" autocomplete="off">Email
+			</label>
+		</div>
+	</div>
 	  <div netlify-recaptcha></div>
 	  <p>
 	    <button type="submit">Send</button>
