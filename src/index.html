@@ -13,7 +13,11 @@
 				<h3>This is the website of a nerd, musician, and tinkerer. <br> And it is all about the hazards of Tech, Music, Reading and other stuff.</h3>
 			</div>
     </div>
-	<form name="contact" method="POST" netlify>
+	<form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+		<div class="d-none">
+			<label>Don't fill this out if you're human</label>
+			<input name="bot-field">
+		</div>
 	  <p>
 	    <label>Your Name: <input type="text" name="name"></label>   
 	  </p>
