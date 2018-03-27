@@ -1,83 +1,13 @@
-
-# Global settings applied to the whole site.  
-# 
-# “publish” is the directory to publish (relative to root of your repo),
-# “command” is your build command,
-# “base” is directory to change to before starting build. if you set base:
-#    that is where we will look for package.json/.nvmrc/etc not repo root!
-
 [build]
-  base    = ""
-  publish = "src"
-  functions = "functions"
+    command = "npm run build"
+    publish = "public"
 
+[build.environment]
+    HUGO_VERSION = "0.35"
 
-# Production context: All deploys to the main
-# repository branch will inherit these settings.
-[context.production]
-  publish = "src"
-  command = ""
-  [context.production.environment]
-    ACCESS_TOKEN = "super secret"
+[context.production.environment]
+    HUGO_ENV = "production"
+    NODE_ENV = "production"
 
-# Deploy Preview context: All Deploy Previews
-# will inherit these settings.
-[context.deploy-preview.environment]
-  ACCESS_TOKEN = "not so secret"
-
-# Branch Deploy context: All deploys that are not in
-# an active Deploy Preview will inherit these settings.
-[context.branch-deploy]
-  command = ""
- 
-  [context.branch-deploy.environment]
-    NODE_ENV = "developement"
-
-# Specific branch context: Deploys from this branch
-# will take these settings and override their
-# current ones.
-[context.staging]
-  command = "echo"
-  base = "staging"
-
-[context."features/branch"]
-  command = "echo features"
-
-
-# COMMENT: These are two basic redirect rules
-# COMMENT: This is an abbreviated syntax for rules that fit in one line
-redirects = [
-  {from = "/blog", to = "/index.html"},
-  {from = "/*", to = "/index.html", status = 200}]
-
-# COMMENT: These are two rules with all the fields expanded
-# COMMENT: This is an expanded syntax for rules that won't fit in one line
-[[redirects]]
-  from = "/old-path"
-  to = "/new-path"
-  status = 301
-  force = false
-  query = {path = ":path"} # COMMENT: apply this rule for /old-path?path=example
-  conditions = {Language = ["en"], Country = ["US"]}
-
-# [[redirects]]
-#   from = "/*"
-#   to = "/index.html"
-#   status = 200
-#   force = true # COMMENT: ensure that we always redirect
-
-  
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-
-    # COMMENT: Multi-key header rules are expressed with multi-line strings
-    Link = '''
-    </assets/css/base.css>; rel=preload; as=style, \
-    </assets/css/base2.css>; rel=preload; as=style, \
-    </assets/css/base3.css>; rel=preload; as=style'''
-
-
-  
+[context.deploy-preview]
+    command = "npm run build:preview"
