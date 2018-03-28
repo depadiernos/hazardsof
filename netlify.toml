@@ -1,9 +1,6 @@
-[build.environment]
-    HUGO_VERSION = "0.35"
-
-[context.production.environment]
-    HUGO_ENV = "production"
-    NODE_ENV = "production"
-
-[context.deploy-preview]
-    command = "npm run build:preview"
+[[redirects]]
+from = "/calculator/test"
+to = "https://jsonplaceholder.typicode.com/posts/1"
+status = 200
+force = true
+headers = {X-From = "netlify_test"}
