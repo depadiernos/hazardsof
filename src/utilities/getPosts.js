@@ -1,8 +1,10 @@
 import matter from 'gray-matter'
-import filesystem from 'file-system'
+import md from '../content/posts/*.md'
 
 export default () => {
-  const posts = __dirname + '../content/posts'
-  const data = filesystem.recurse(posts)
-  return data
+  console.log(md)
+  let posts = {}
+  posts = Object.keys(md).map( post => matter(md[post]))
+  console.log(posts)
+  return posts
 }
