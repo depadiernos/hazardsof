@@ -25,6 +25,12 @@ const App = () => {
   )
 }
 
+injectGlobal`
+  body {
+    margin: 0;
+  }
+`
+
 const Body = styled('div')`
   font-family: Raleway, Sans;
   margin: 0 auto;
