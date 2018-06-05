@@ -36,7 +36,7 @@ const Body = styled('div')`
   margin: 0 auto;
 `
 const RouterDiv = styled(Router)`
-  padding-top: 2em;
+  padding-top: 52px;
 `
 
 render(<App />, document.getElementById('root'));
