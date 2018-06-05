@@ -13,6 +13,7 @@ const Home = styled('section')`
   background-size: cover;
   background-position: center;
   margin: 0;
+  margin-top: -2em;
   height: 100%;
   div {
     background: rgba(255,255,255,0.6);

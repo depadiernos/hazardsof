@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { render } from 'react-dom'
 import { Router } from '@reach/router'
-import { injectGlobal } from 'styled-components'
+import styled, { injectGlobal } from 'react-emotion'
 import 'typeface-raleway'
 //import stateless components
 import Header from './components/header'
@@ -13,23 +13,24 @@ import Blog from './containers/Blog'
 
 const App = () => {
   return (
-    <Fragment>
+    <Body>
       <Header/>
-      <Router>
+      <RouterDiv>
         <Home path="/"/>
         <About path="/about"/>
         <Blog path="/blog" />
-      </Router>
+      </RouterDiv>
       <Footer/>
-    </Fragment>
+    </Body>
   )
 }
 
-injectGlobal`
-  body {
-    font-family: Raleway, Sans;
-    margin: 0 auto;
-  }
+const Body = styled('div')`
+  font-family: Raleway, Sans;
+  margin: 0 auto;
+`
+const RouterDiv = styled(Router)`
+  padding-top: 2em;
 `
 
 render(<App />, document.getElementById('root'));
