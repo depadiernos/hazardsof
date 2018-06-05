@@ -22,6 +22,8 @@ const Home = styled('section')`
     text-align: center;
     text-shadow: -0.1em 0 white, 0 0.1em white, 0.1em 0 white, 0 -0.1em white;
     padding: 3em 0 3em 0;
+    font-size: 1.5em;
+    font-weight: 500;
   }
 `
 
