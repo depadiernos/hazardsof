@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import { render } from 'react-dom'
 import { Router } from '@reach/router'
 import styled, { injectGlobal } from 'react-emotion'
-import 'typeface-raleway'
 //import stateless components
 import Header from './components/header'
 import Footer from './components/footer'
@@ -32,7 +31,7 @@ injectGlobal`
 `
 
 const Body = styled('div')`
-  font-family: Raleway, Sans;
+  font-family: Sans;
   margin: 0 auto;
 `
 const RouterDiv = styled(Router)`
