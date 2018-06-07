@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, Component } from 'react'
 import { render } from 'react-dom'
 import { Router } from '@reach/router'
 import styled, { injectGlobal } from 'react-emotion'
@@ -10,18 +10,20 @@ import Home from './containers/Home'
 import About from './containers/About'
 import Blog from './containers/Blog'
 
-const App = () => {
-  return (
-    <Body>
-      <Header/>
-      <RouterDiv>
-        <Home path="/"/>
-        <About path="/about"/>
-        <Blog path="/blog" />
-      </RouterDiv>
-      <Footer/>
-    </Body>
-  )
+class App extends Component {
+  render() {
+    return (
+      <Body>
+        <Header/>
+        <RouterDiv>
+          <Home path="/"/>
+          <About path="/about"/>
+          <Blog path="/blog" />
+        </RouterDiv>
+        <Footer/>
+      </Body>
+    )
+  }
 }
 
 injectGlobal`

@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'react-emotion'
-import background from '../img/city.jpg'
+import background from '../../images/city.jpg'
 
 //style
-const Home = styled('section')`
+const Home = styled('div')`
   display: flex;
   justify-content: center;
   align-items: center;
