@@ -1,4 +1,9 @@
 [[redirects]]
+  from = "/fun"
+  to = "https://kind-ramanujan-30faa6.netlify.com"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
