@@ -1,0 +1,3 @@
+[submodule "cyclocrass"]
+	path = cyclocrass
+	url = https://github.com/fool/cyclocrass.com
