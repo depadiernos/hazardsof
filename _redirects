@@ -1,0 +1,2 @@
+/profile/*			    200!	Role=admin
+/profile/*	/blog	401!
