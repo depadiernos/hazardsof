@@ -1,5 +1,5 @@
 
 /profile/* 200! Role=admin
 
-/profile/* /*	302!
+/profile/* /	302!
 /* /index.html 200
