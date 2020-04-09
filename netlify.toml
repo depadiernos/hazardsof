@@ -15,7 +15,7 @@
   
   [[redirects]]
   from = "/*"
-  to = "/401.html"
+  to = "/blog"
   status = 401
   force = true
   
