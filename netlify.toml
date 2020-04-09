@@ -2,14 +2,9 @@
   from = "/fun"
   to = "https://hazardsof.fun"
   status = 200
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
   
 [[redirects]]
-  from = "/*"
+  from = "/profile/*"
   status = 200
   conditions = {Role = ["*"]}
   # By default, redirects won't be applied if there's a file with the same
@@ -18,8 +13,12 @@
   force = true
 
 [[redirects]]
-  from = "/*"
+  from = "/profile/*"
   to = "/blog"
   status = 401
   force = true
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
