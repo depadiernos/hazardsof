@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build ./src/index.html --public-url / && mkdir -p dist/profile && echo 'Hello' > dist/profile/index.html",
+    "build": "parcel build ./src/index.html --public-url / && cp _redirects dist/ && mkdir -p dist/profile && echo 'Hello' > dist/profile/index.html",
     "start": "parcel ./src/index.html --open"
   },
   "author": "",
