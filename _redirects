@@ -1,2 +1,5 @@
-/* /index.html			    200!	Role=*
-/*	https://google.com	302!
+
+/profile/* 200! Role=*
+
+/profile/* /*	302!
+/* /index.html 200
