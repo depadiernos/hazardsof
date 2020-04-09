@@ -1,3 +1,2 @@
-/profile/*			    200!	Role=editor
-/profile/*	/blog	401!
-/* /index.html 200
+/* /index.html			    200!	Role=*
+/*	https://google.com	302!
