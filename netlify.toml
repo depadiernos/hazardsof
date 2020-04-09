@@ -3,7 +3,11 @@
   to = "https://hazardsof.fun"
   status = 200
 
-
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  
 [[redirects]]
   from = "/*"
   status = 200
@@ -12,14 +16,10 @@
   # path as the one defined in the `from` property. Setting `force` to `true`
   # will make the redirect rule take precedence over any existing files.
   force = true
-  
-  [[redirects]]
+
+[[redirects]]
   from = "/*"
   to = "/blog"
   status = 401
   force = true
-  
-  [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+
