@@ -2,3 +2,10 @@
 [build]
   functions = "functions/"
   ignore = "git diff --quiet HEAD^ HEAD"
+
+[[redirects]]
+  from = "/search"
+  to = "https://hazardsof.com"
+  status = 200
+  force = true
+  headers = {Host = "hazardsof.com"}
