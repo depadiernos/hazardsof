@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.8.1"
+    "parcel-bundler": "^1.10.0"
   },
   "dependencies": {
     "@reach/router": "^1.0.4",
