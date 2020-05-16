@@ -9,6 +9,6 @@ jobs:
     steps:
     - name: Slack notification action
       id: test
-      uses: depadiernos/my-slack-action@v1.5
+      uses: depadiernos/my-slack-action@v1.6
       with:
-        slack-webhook-url: ${{secrets.SLACK_WEBHOOK>URL}}
+        slack-webhook-url: ${{secrets.SLACK_WEBHOOK_URL}}
