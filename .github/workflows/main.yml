@@ -11,4 +11,4 @@ jobs:
       id: test
       uses: depadiernos/my-slack-action@v1.9
       with:
-        slack-url: '${{ secrets.SLACK_WEBHOOK_URL }}'
+        slack-url: "${{ secrets.SLACK_WEBHOOK_URL }}"
