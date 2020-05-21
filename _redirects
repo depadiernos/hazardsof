@@ -1,4 +1,5 @@
 
+/somepath https://dennispadiernos.com/anotherpath 200!
 /profile/* 200! Role=admin
 
 /profile/* /	302!
