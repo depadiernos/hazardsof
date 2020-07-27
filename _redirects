@@ -1,3 +1,4 @@
+/group-renew groupIds=:groupIds	/signin?redirectUrl%3D%2Fgroup-renew%3FgroupIds=:groupIds	302!
 
 /somepath https://dennispadiernos.com/anotherpath 200!
 /profile/* 200! Role=admin
