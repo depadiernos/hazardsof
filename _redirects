@@ -1,14 +1,14 @@
 /group-renew groupIds=:groupIds	/group-renew?groupIds=:groupIds	200! Role=user
 /group-renew groupIds=:groupIds	/signin?redirectUrl%3D%2Fgroup-renew%3FgroupIds=:groupIds	302!
-/emailtest	200! Role=user
-/OneEventForm	200! Role=user
-/tithetest/signup	200! Role=user
-/mygroups	200! Role=user
-/eventform/list	200! Role=user
-/eventform/one	200! Role=user
-/30-day-trial/sign-up	200! Role=user
-/ChrisEventList	200! Role=user
-/otgallwomancampspring2019	200! Role=user
+/emailtest 200! Role=user
+/OneEventForm 200! Role=user
+/tithetest/signup 200! Role=user
+/mygroups 200! Role=user
+/eventform/list 200! Role=user
+/eventform/one 200! Role=user
+/30-day-trial/sign-up 200! Role=user
+/ChrisEventList 200! Role=user
+/otgallwomancampspring2019 200! Role=user
 /Test_Family_Picker	200! Role=user
 /form-4-1-14-2020/	200! Role=user
 /testform-2020	200! Role=user
