@@ -4,4 +4,4 @@
 
 /profile/* /	302!
 https://hazardsof.com/* /my/:splat 200
-https://hazardsof.com/* /my/404.html 404
+https://hazardsof.com/my/* /my/404.html 404
