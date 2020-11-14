@@ -3,5 +3,4 @@
 /profile/* 200! Role=admin
 
 /profile/* /	302!
-/* /index.html 200
 /* /my/404.html 404
