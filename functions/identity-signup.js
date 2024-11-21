@@ -6,5 +6,4 @@ exports.handler = async function(event, context) {
     statusCode: 200,
     body: JSON.stringify({ message: "Signup from invite detected"})
    }
-  }
 };
