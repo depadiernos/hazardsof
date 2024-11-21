@@ -9,8 +9,3 @@
   status = 200
   force = true
   headers = {Host = "hazardsof.com"}
-
-[[headers]]
-  for = "/.netlify/functions/identity-signup"
-  [headers.values]
-    Netlify-Vary = "query=''"
