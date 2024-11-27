@@ -1,6 +1,6 @@
 import { getStore, getDeployStore } from "@netlify/blobs";
 
-export default async function(req, context) {
+export default async function(req) {
   const construction = getStore("construction");
   await construction.set("nails", "For general carpentry");
 
