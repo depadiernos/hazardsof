@@ -1,4 +1,6 @@
 
+/api/new  /.netlify/functions/new  200
+
 /somepath https://dennispadiernos.com/anotherpath 200!
 /profile/* 200! Role=admin
 
