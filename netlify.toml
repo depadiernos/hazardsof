@@ -4,8 +4,8 @@
   ignore = "git diff --quiet HEAD^ HEAD"
 
 [[redirects]]
-  from = "/search"
-  to = "https://something.netlify.app"
+  from = "/something"
+  to = "https://f0d9e60e8195254c44d76b1db77f4af5.m.pipedream.net"
   status = 200
   force = true
-  headers = {Host = "hazardsof.com"}
+  headers = {RandomHost = "hazardsof.com"}
