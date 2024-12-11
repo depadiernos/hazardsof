@@ -3,7 +3,8 @@
 
 
 /profile/* 200! Role=admin
-/somepath?* /blog?:splat 301!
+/anotherpath go=:go stop=:stop /blog?go=:go&stop=:stop 301!
+/otherpath?* /blog?:splat 301!
 /somepath https://dennispadiernos.com/anotherpath 200!
 /profile/* /	302!
 https://hazardsof.com/* /my/:splat 200
