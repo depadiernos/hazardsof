@@ -9,3 +9,9 @@
   status = 200
   force = true
   headers = {RandomHost = "hazardsof.com"}
+
+[[redirects]]
+  from = "///"
+  to = "/"
+  status = 200
+  force = true
