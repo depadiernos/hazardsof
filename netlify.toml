@@ -14,4 +14,3 @@
   from = "///"
   to = "/"
   status = 302
-  force = true
